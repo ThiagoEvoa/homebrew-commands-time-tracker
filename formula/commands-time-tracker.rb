@@ -1,7 +1,7 @@
 class CommandsTimeTracker < Formula
   desc "A universal command time tracker"
   homepage "https://github.com/ThiagoEvoa/commands_time_tracker"
-  url "https://github.com/ThiagoEvoa/commands_time_tracker/archive/v1.0.0.tar.gz"
+  url "https://github.com/ThiagoEvoa/commands_time_tracker/archive/v1.0.1.tar.gz"
 
   license "MIT"
 
