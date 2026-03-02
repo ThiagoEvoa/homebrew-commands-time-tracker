@@ -1,4 +1,4 @@
-# commands_time_tracker
+# homebrew-commands-time-tracker
 
 A universal command time tracker that logs build and development metrics for flutter, dart, make, pod, gradle, and cache commands.
 
