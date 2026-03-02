@@ -1,8 +1,8 @@
 class CommandsTimeTracker < Formula
   desc "A universal command time tracker"
   homepage "https://github.com/ThiagoEvoa/commands_time_tracker"
-  url "https://github.com/ThiagoEvoa/commands_time_tracker/archive/v1.1.2.tar.gz"
-  sha256 "ccb296cb5c8dac011fff632df0a0cb28d3d8dd4c09ccec1864a712f6a8541a89"
+  url "https://github.com/ThiagoEvoa/commands_time_tracker/archive/v1.1.3.tar.gz"
+  sha256 "7b3032de35af95543ae695b4b0e5ec8fde3dc7b48b133d2ea23f8df2218ec74c"
 
   license "MIT"
 
