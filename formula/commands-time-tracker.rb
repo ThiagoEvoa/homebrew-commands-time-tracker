@@ -18,9 +18,9 @@ class CommandsTimeTracker < Formula
         source #{opt_pkgshare}/time_tracker.sh
       
       To enable automatic 12-hour summaries, run this command:
+      
         (crontab -l 2>/dev/null; echo "0 */12 * * * #{opt_bin}/summarize >> ~/summarizer.log 2>&1") | crontab -
       
-      - To see the log: cat ~/summarizer.log
       - To remove the automated cron job: summarize --uninstall
     EOS
   end
