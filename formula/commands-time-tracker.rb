@@ -2,6 +2,7 @@ class CommandsTimeTracker < Formula
   desc "A universal command time tracker"
   homepage "https://github.com/ThiagoEvoa/commands_time_tracker"
   url "https://github.com/ThiagoEvoa/commands_time_tracker/archive/v1.1.2.tar.gz"
+  sha256 "ccb296cb5c8dac011fff632df0a0cb28d3d8dd4c09ccec1864a712f6a8541a89"
 
   license "MIT"
 
@@ -10,27 +11,17 @@ class CommandsTimeTracker < Formula
     pkgshare.install "bin/time_tracker.sh"
   end
 
-  def post_install
-    script_path = "#{opt_bin}/summarize"
-    cron_job = "0 */12 * * *#{script_path} >> #{Dir.home}/summarizer.log 2>&1"
-    unless `crontab -l 2>/dev/null`.include?(script_path)
-      system "crontab -l 2>/dev/null | { cat; echo '#{cron_job}'; } | crontab -"
-    end
-  end
-
   def caveats
     <<~EOS
       To start tracking your commands, add the following line to your .zshrc:
       
         source #{opt_pkgshare}/time_tracker.sh
       
-      A cron job has been automatically added to run the summary every 12h.
-      Logs can be found in ~/summarizer.log if needed.
-
-      To remove the automated cron job, run:
-        crontab -l | grep -v "summarize" | crontab -
-        or
-        summarize --uninstall
+      To enable automatic 12-hour summaries, run this command:
+        (crontab -l 2>/dev/null; echo "0 */12 * * * #{opt_bin}/summarize >> ~/summarizer.log 2>&1") | crontab -
+      
+      - To see the log: cat ~/summarizer.log
+      - To remove the automated cron job: summarize --uninstall
     EOS
   end
 
