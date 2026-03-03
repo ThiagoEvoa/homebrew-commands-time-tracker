@@ -1,4 +1,4 @@
-# homebrew-commands-time-tracker
+# commands_time_tracker
 
 A universal command time tracker that logs build and development metrics for flutter, dart, make, pod, gradle, and cache commands.
 
@@ -15,6 +15,15 @@ To start tracking your commands, add the following line to your `.zshrc`:
 
 ```bash
 source $(brew --prefix commands-time-tracker)/share/commands-time-tracker/time_tracker.sh
+```
+
+Directory Filtering (Optional)
+
+You can restrict the tracker to only log commands executed within a specific project folder. Add the following environment variable to your .zshrc:
+
+```bash
+# Only track commands when the terminal path contains this folder name
+export TRACK_FOLDER="my-project-name"
 ```
 
 ## Configuration
