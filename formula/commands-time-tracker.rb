@@ -16,6 +16,11 @@ class CommandsTimeTracker < Formula
       To start tracking your commands, add the following line to your .zshrc:
       
         source #{opt_pkgshare}/time_tracker.sh
+
+        
+      To add an specific folder to track the commands, add the following line to your .zshrc:
+      
+        export TRACK_FOLDER="my-project-name"
       
       To enable automatic 12-hour summaries, run this command:
       
