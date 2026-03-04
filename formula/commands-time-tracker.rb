@@ -3,7 +3,7 @@ class CommandsTimeTracker < Formula
   homepage "https://github.com/ThiagoEvoa/commands_time_tracker"
   url "https://github.com/ThiagoEvoa/commands_time_tracker/archive/v1.2.3.tar.gz"
   # curl -L https://github.com/ThiagoEvoa/commands_time_tracker/archive/vx.x.x.tar.gz | shasum -a 256
-  sha256 "901eb6487cf1de2a3cc203ba95e13581c25a623a013193ad4ff8d3a07c767602"
+  sha256 "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
 
   license "MIT"
 
@@ -17,11 +17,10 @@ class CommandsTimeTracker < Formula
       To start tracking your commands, add the following line to your .zshrc:
       
         source #{opt_pkgshare}/time_tracker.sh
-
         
       To add an specific folder to track the commands, add the following line to your .zshrc:
       
-        export TRACK_FOLDER="my-project-name"
+        export TIME_TRACK_REPOS=("git@github.com:yourname/" "git@gitlab.company.com:project/")
       
       To enable automatic 12-hour summaries, run this command:
       
