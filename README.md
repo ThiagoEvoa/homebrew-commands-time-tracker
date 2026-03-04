@@ -19,11 +19,11 @@ source $(brew --prefix commands-time-tracker)/share/commands-time-tracker/time_t
 
 Directory Filtering (Optional)
 
-You can restrict the tracker to only log commands executed within a specific project folder. Add the following environment variable to your .zshrc:
+You can restrict the tracker to only log commands executed within a specific repository. Add the following environment variable to your .zshrc:
 
 ```bash
-# Only track commands when the terminal path contains this folder name
-export TRACK_FOLDER="my-project-name"
+# Only track commands when the terminal path is in a specific repo within the array.
+export TIME_TRACK_REPOS=("git@github.com:yourname/" "git@gitlab.company.com:project/")
 ```
 
 ## Configuration
