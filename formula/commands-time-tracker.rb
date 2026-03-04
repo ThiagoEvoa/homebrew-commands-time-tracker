@@ -14,14 +14,14 @@ class CommandsTimeTracker < Formula
 
   def caveats
     <<~EOS
+      To add an specific folder to track the commands, add the following line to your .zshrc:
+      
+        export TIME_TRACK_REPOS=("https://github.com" "git@github.com")
+        
       To start tracking your commands, add the following line to your .zshrc:
       
         source #{opt_pkgshare}/time_tracker.sh
         
-      To add an specific folder to track the commands, add the following line to your .zshrc:
-      
-        export TIME_TRACKER_REPOS=("https://github.com" "git@github.com")
-      
       To enable automatic 12-hour summaries, run this command:
       
         (crontab -l 2>/dev/null; echo "0 */12 * * * #{opt_bin}/summarize >> ~/summarizer.log 2>&1") | crontab -
