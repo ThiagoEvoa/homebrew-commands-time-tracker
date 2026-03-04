@@ -20,7 +20,7 @@ class CommandsTimeTracker < Formula
         
       To add an specific folder to track the commands, add the following line to your .zshrc:
       
-        export TIME_TRACK_REPOS=("git@github.com:yourname/" "git@gitlab.company.com:project/")
+        export TIME_TRACKER_REPOS=("https://github.com" "git@github.com")
       
       To enable automatic 12-hour summaries, run this command:
       
