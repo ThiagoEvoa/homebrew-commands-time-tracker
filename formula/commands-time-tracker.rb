@@ -3,7 +3,7 @@ class CommandsTimeTracker < Formula
   homepage "https://github.com/ThiagoEvoa/commands_time_tracker"
   url "https://github.com/ThiagoEvoa/commands_time_tracker/archive/v1.3.3.tar.gz"
   # curl -L https://github.com/ThiagoEvoa/commands_time_tracker/archive/vx.x.x.tar.gz | shasum -a 256
-  sha256 "45eb04723133031c66e0fce00adc1b01bd6bda54e0e6a69f4a2446c705e25779"
+  sha256 "71d0050f82fc1c440984d4deb8ada17b780495e4f01ccd4d499deb64c496c8ba"
 
   license "MIT"
 
