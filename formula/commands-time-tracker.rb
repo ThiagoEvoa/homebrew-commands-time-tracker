@@ -1,7 +1,7 @@
 class CommandsTimeTracker < Formula
   desc "A universal command time tracker"
   homepage "https://github.com/ThiagoEvoa/commands_time_tracker"
-  url "https://github.com/ThiagoEvoa/commands_time_tracker/archive/v1.2.3.tar.gz"
+  url "https://github.com/ThiagoEvoa/commands_time_tracker/archive/v1.3.3.tar.gz"
   # curl -L https://github.com/ThiagoEvoa/commands_time_tracker/archive/vx.x.x.tar.gz | shasum -a 256
   sha256 "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
 
